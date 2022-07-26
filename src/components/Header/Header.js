@@ -2,12 +2,11 @@ import "./Header.css";
 import useBasic from "../../data/queryHooks/useBasic";
 import HeaderLogo from "./HeaderLogo/HeaderLogo";
 import svglogo from "../../images/miflogo.svg";
-import Loader from "../../components/Loader/Loader";
 function Header() {
   const basicFestivalData = useBasic();
 
   if (basicFestivalData.isLoading) {
-    return <Loader />;
+    return null;
   } else {
     const festData = basicFestivalData.data[0];
     return (
