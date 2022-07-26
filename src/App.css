@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+html {
+  background: url(./images/pagebg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  height: 100%;
+  /* background-color: rgb(31, 112, 136); */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* media queries */
+/* mobile first small*/
+/* main page content container */
+.content {
+  margin-top: 6rem;
+  color: var(--text_light_color);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.content a {
   color: white;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.content a:hover {
+  color: yellow;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+p {
+  /* nice line length 45 to 70 chars - lets try 60 */
+  max-width: 60ch;
+  line-height: 1.3rem;
+}
+
+h1,
+h2,
+h3 {
+  text-shadow: 1px 1px 6px rgba(50, 50, 50, 0.6);
+  filter: drop-shadow(4px 4px 6px rgba(39, 39, 39, 0.3));
+}
+
+p {
+  text-shadow: 1px 1px 4px #000;
+  filter: drop-shadow(4px 4px 6px rgba(39, 39, 39, 0.5));
+  padding-bottom: 1rem;
+}
+
+.box_drop_shadow {
+  filter: drop-shadow(6px 6px 6px rgba(39, 39, 39, 0.3));
+}
+
+.page_h1 {
+  text-align: center;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.admission {
+  font-weight: 600;
+  font-size: 1.2rem;
+  /* background-color: red; */
+  color: yellow;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .content {
+    margin-top: 6rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .content {
+    margin-top: 6rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .content {
+    margin-top: 8rem;
   }
 }

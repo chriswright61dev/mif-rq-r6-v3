@@ -1,4 +1,5 @@
 import "./App.css";
+import "./colours.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 // ui
