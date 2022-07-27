@@ -5,14 +5,9 @@ function Venue({ eventListData }) {
     <div className="content">
       <div className="container">
         <PageTop />
-        <h1 className="page_h1">A Levenshulme Festival Venue</h1>
+        <h1 className="page_h1">A Manchester Irish Festival Venue</h1>
         <VenueDetails eventListData={eventListData} />
       </div>
-
-      {/* <aside>
-        <h4>Other Venues</h4>
-        add a list of other venues for quick switching?
-      </aside> */}
     </div>
   );
 }

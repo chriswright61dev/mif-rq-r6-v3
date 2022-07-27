@@ -11,6 +11,7 @@ import Events from "./pages/Events";
 import Event from "./pages/Event";
 import EventsOld from "./pages/EventsOld";
 import Venues from "./pages/Venues";
+import VenuesByYear from "./pages/VenuesByYear";
 import Venue from "./pages/Venue";
 import News from "./pages/News";
 import NewsItem from "./pages/Newsitem.js";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/news" element={<News />}></Route>
           <Route path="/news/:id" element={<NewsItem />}></Route>
           <Route path="/venues" element={<Venues />}></Route>
+          <Route path="/venuesyear" element={<VenuesByYear />}></Route>
           <Route path="/venues/:id" element={<Venue />}></Route>
           {/* <Route path="/allvenues" element={<AllVenues />}></Route> */}
 
