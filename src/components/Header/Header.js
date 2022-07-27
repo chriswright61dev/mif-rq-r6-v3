@@ -15,7 +15,7 @@ function Header() {
         <HeaderLogo logosource={svglogo} />
         <div className="header_text">
           <h3> {festData.festival_title}</h3>
-          <p>{festData.festival_dates}</p>
+          <h4>{festData.festival_dates}</h4>
         </div>
       </header>
     );

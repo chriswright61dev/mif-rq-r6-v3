@@ -25,9 +25,6 @@ function EventCard({ link, id, old, title, venue, date, introduction, image }) {
 
       <div className="event_card__text_bottom">
         <p> {introduction}</p>
-        {/* <p>
-          event id {props.id} venue id {props.venue_id}
-        </p> */}
       </div>
 
       <ImageContainer type="square" source={image} altText={title} />
