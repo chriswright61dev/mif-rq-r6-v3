@@ -3,7 +3,7 @@ import WebsiteLink from "../../../../components/text/WebsiteLink/WebsiteLink";
 import EmailLink from "../../../../components/text/EmailLink/EmailLink";
 import GMap from "../../../../components/map/GMap/GMap";
 import GStreetView from "../../../../components/map/GStreetView/GStreetView";
-// import EventsAtVenue from "../../../Events/EventsAtVenue/EventsAtVenue";
+import EventsAtVenue from "../../../Events/EventsAtVenue/EventsAtVenue";
 import "./VenueDetail.css";
 
 function VenueDetail({ data, venueEvents }) {
@@ -47,7 +47,7 @@ function VenueDetail({ data, venueEvents }) {
         <div className="venue_events">
           <h4>Events at {vs.venue_title}</h4>
 
-          {/* <EventsAtVenue venueEvents={venueEvents} /> */}
+          <EventsAtVenue venueEvents={venueEvents} />
         </div>
 
         <div className="venue_images">

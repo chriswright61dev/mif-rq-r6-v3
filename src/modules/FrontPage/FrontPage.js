@@ -8,7 +8,7 @@ function FrontPage({ introText, latestNews, adverts }) {
   return (
     <>
       <AdvertCards adverts={adverts} />
-      <p>{introText}</p>
+      <h4 className="front-page-intro">{introText}</h4>
       <div className="front_page__cards">
         <FrontPageNewsDataCard latestNews={latestNews} />
       </div>

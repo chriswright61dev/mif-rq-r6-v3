@@ -37,3 +37,7 @@
   transition-delay: 1s;
   transition-timing-function: ease-out;
 }
+.front-page-intro {
+  text-align: center;
+  width: 100vw;
+}
